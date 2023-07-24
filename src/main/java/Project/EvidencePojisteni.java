@@ -53,7 +53,6 @@ public class EvidencePojisteni {
             System.out.println("3 – Vyhledat pojisteneho");
             System.out.println("4 – Konec");
             volba = Integer.parseInt(sc.nextLine());
-            sc.nextLine(); // Ošetření nového řádku po přečtení čísla
 
             switch (volba) {
                 case 1:
@@ -65,7 +64,6 @@ public class EvidencePojisteni {
                     String telefon = sc.nextLine();
                     System.out.println("Zadejte vek:");
                     int vek = Integer.parseInt(sc.nextLine());
-                    sc.nextLine(); // Ošetření nového řádku po přečtení čísla
 
                     Pojisteny novyPojisteny = new Pojisteny(jmeno, prijmeni, vek, telefon);
                     evidence.pridejPojisteneho(novyPojisteny);
